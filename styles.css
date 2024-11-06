@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content:  center;
+    margin: 0;
+    padding: 0;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+    width: 25vw;
+}
+
+.icons img {
+    height: 200px;
+    width: 200px;
+}
+
+.icons img:hover {
+    height: 220px;
+    width: 220px;
+    color: gray;
+}
