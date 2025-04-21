@@ -42,3 +42,5 @@ function hideAllPopups() {
     loginPopup.style.visibility = "hidden";
     bannerPopup.style.visibility = "hidden";
 }
+
+showBannerPopup("Website in under construction!    Last update: 21/04/2025", "#ffffa8");  // Starting banner
