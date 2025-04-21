@@ -1,0 +1,369 @@
+/* Grundläggande reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Georgia", serif;
+  width: 100%;
+  height: 100vh;
+  --footer-header-height: 100px;  /* Global variable for footer/header height */
+}
+
+/* Default styling for all buttons */
+.button {
+  width: 168.65px;
+  height: 39.45px;
+  background-color: #2A9FA8;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.342);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-family: "Georgia", serif;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #248a94;
+}
+
+/*---------HEADER---------*/
+
+/* Header som fyller hela skärmens bredd */
+.site-header {
+  width: 100%;
+  height: var(--footer-header-height);
+  background: linear-gradient(to right, #869ACD, #E8E8E8);
+  border: 1px solid;
+  border-image: linear-gradient(to right, #FFFFFF, #F1EDF5, #F2F2F2) 1;
+  box-shadow: 0px 3px 24px -1px rgba(0, 0, 0, 0.2); /* Drop shadow */
+  backdrop-filter: blur(40px); /* Simulerar background blur */
+  -webkit-backdrop-filter: blur(40px); /* Safari-stöd */
+  position: relative;
+  z-index: 10;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 99px;
+}
+
+.logo {
+  margin-left: -20px;
+  margin-top: 6px;
+}
+
+/* Logotyp */
+.logo img {
+  width: 69.52px;
+  height: 69.52px;
+}
+
+.main-nav {
+  width: 1218px;
+  height: 59.18px;
+  margin-top: 10px;
+  margin-left: 57px;
+  opacity: 0.8;
+}
+
+/* Navigationsmeny */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  height: 100%;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  height: 25.64px;
+  transition: color 0.3s ease;
+  opacity: 0.8;
+  padding-top: 32.55px;
+  cursor: pointer;
+}
+
+.main-nav a:hover {
+  color: #2A9FA8;
+}
+
+
+
+.login-popup {
+  background-color: #EBF7FF;
+  bottom: var(--footer-header-height);
+  box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  height: 40vh;
+  justify-content: space-around;
+  padding: 25px 25px 40px 25px;
+  position: fixed;
+  right: 0; 
+  visibility: hidden;
+  z-index: 1;
+  width: 400px;
+}
+
+
+/* ---------BANNER POPUP--------- */
+
+.banner-popup {
+  align-items: center;
+  background-color: #cfffcb;
+  display: flex;
+  font-family: Arial;
+  font-weight: bold;
+  height: 50px;
+  position: fixed;
+  top: var(--footer-header-height);
+  visibility: hidden;
+  width: 100%;
+}
+
+.banner-popup > p {
+  margin: 0;
+  text-align: center;
+  flex: 1;
+}
+
+.banner-popup > .x-button {
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+
+/*---------MIDDLE---------*/
+
+.site-middle {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/*---------TEXT INFO---------*/
+
+.info-element {                  
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5em;
+  height: 50vh;
+  width: 20vw;
+}
+
+.info-element > .large-text { 
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.info-element > img {                    
+  align-self: flex-end;
+  height: auto;
+  position: relative;
+  left: 100px;
+  width: 15em;
+}
+
+/*---------USER FORM---------*/
+
+.signup-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.user-info {       
+  background-color: #EBF7FF;
+  box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  justify-content: space-around;
+  height: 500px;
+  padding: 25px 25px 40px 25px;
+  width: 500px;       
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field > input {     
+  background-color: #D4E3EE;
+  border: 1px solid #9A9A9A;
+  border-radius: 5px;
+  height: 35px;      
+  padding: 0px 15px 0px 15px;
+}
+
+/*---------LANDLORDS CHECKLIST---------*/
+
+.landlord-logo {
+  align-items: center;
+  background-color: #EBF7FF;
+  border-radius: 90px;
+  display: flex;
+  font-family: Arial;
+  font-weight: bold;
+  height: 50px;
+  justify-content: center;
+  width: 50px;
+}
+
+.landlord {
+  border-bottom: #d3d3d3 1px solid;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 20px 10px 0px;
+}
+
+input[type="checkbox"] {
+  margin-left: auto;
+  height: 17px;
+  width: 17px; 
+}
+
+.landlords-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/*---------FOOTER---------*/
+
+.site-footer {
+  width: 100%;
+  height: var(--footer-header-height);
+  background: linear-gradient(to right, #869ACD, #E8E8E8);
+  border: 1px solid;
+  border-image: linear-gradient(to right, #FFFFFF, #F1EDF5, #F2F2F2) 1;
+  box-shadow: 0px 3px 24px -1px rgba(0, 0, 0, 0.2); /* Drop shadow */
+  backdrop-filter: blur(40px); /* Simulerar background blur */
+  -webkit-backdrop-filter: blur(40px); /* Safari-stöd */
+  position: relative;
+}
+
+.footer-logos {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.footer-logos img {
+  height: 45px;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+/* x button for all popups */
+.x-button {
+  border: none;
+  background-color: transparent;
+  color: #9A9A9A;
+  font-size: 17px;
+  font-weight: bold;
+  width: 20px;
+}
+
+.x-button:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+/*--------- SIGNUP POPUP ---------*/
+
+.signup-popup {
+  background-color: #EBF7FF;
+  bottom: var(--footer-header-height);
+  box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  height: 70vh;
+  justify-content: space-around;
+  padding: 25px 25px 40px 25px;
+  position: fixed;
+  right: 0; 
+  visibility: hidden;
+  z-index: 1;
+  width: 400px;
+}
+
+.signup-popup-title, .login-popup-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+
+
+/*--------- LOGIN POPUP ---------*/
+
+.login-popup {
+  background-color: #EBF7FF;
+  bottom: var(--footer-header-height);
+  box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  height: 40vh;
+  justify-content: space-around;
+  padding: 25px 25px 40px 25px;
+  position: fixed;
+  right: 0; 
+  visibility: hidden;
+  z-index: 1;
+  width: 400px;
+}
+
+.login-popup > .x-button, .signup-popup > .x-button {
+  align-self: flex-end;
+}
+
+.new-acc-container {
+  display: flex;
+  gap: 10px;
+}
+
+.create-acc-text {
+  color: #2A9FA8;
+  cursor: pointer;
+}
+
+.create-acc-text:hover {
+  color: #1d777e;
+}
+
+
+
