@@ -1,0 +1,41 @@
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Välkommen */
+.header-text {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.text-mat-hint-ng-star-inserted {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.sign-in {
+    background-color: gray;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 600px;
+    justify-content: center;
+    padding: 70px;
+    width: 500px;
+}
+
+.sign-in button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 40px;
+    width: 300px;
+}
