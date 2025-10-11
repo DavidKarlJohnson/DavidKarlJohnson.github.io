@@ -12,7 +12,6 @@
 }
 
 .project:hover {
-    cursor: pointer;
     filter: none;
     transition: all 200ms ease-in-out;
     transform: scale(1.05);

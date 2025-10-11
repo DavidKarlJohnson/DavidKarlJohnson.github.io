@@ -23,7 +23,7 @@ function App() {
         description: 'Simple weather app for displaying the local weather', 
         gitHubLink: 'www.github.com',
         projectLink: 'www.davidjohnson.se',
-        toolsUsed: ['JavaScript', 'HTML', 'CSS']
+        toolsUsed: ['JavaScript', 'HTML', 'CSS', 'Webpack']
       },
       {
         id: crypto.randomUUID(),
