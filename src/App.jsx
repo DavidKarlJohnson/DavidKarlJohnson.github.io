@@ -22,7 +22,8 @@ function App() {
         title: 'Weather app', 
         description: 'Simple weather app for displaying the local weather', 
         gitHubLink: 'www.github.com',
-        projectLink: 'www.davidjohnson.se'
+        projectLink: 'www.davidjohnson.se',
+        toolsUsed: ['JavaScript', 'HTML', 'CSS']
       },
       {
         id: crypto.randomUUID(),

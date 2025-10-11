@@ -15,6 +15,7 @@ export default function Projects({projectsArr}) {
                     description={project.description}
                     gitHubLink={project.gitHubLink}
                     projectLink={project.projectLink}
+                    toolsUsed={project.toolsUsed}
                     />
                 ) } 
             </div>
