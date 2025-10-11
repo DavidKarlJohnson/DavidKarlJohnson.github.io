@@ -3,6 +3,7 @@ import './App.css'
 import Profile from './components/Profile'
 import Projects from './components/Projects'
 import Contact from './components/Contact';
+import weatherAppImg from './assets/project-image-weather-app.png'
 
 function App() {
   const [projects, setProjects] = useState(
@@ -17,7 +18,7 @@ function App() {
       },
       {
         id: crypto.randomUUID(),
-        imgSrc: null, 
+        imgSrc: weatherAppImg, 
         title: 'Weather app', 
         description: 'Simple weather app for displaying the local weather', 
         gitHubLink: 'www.github.com',
