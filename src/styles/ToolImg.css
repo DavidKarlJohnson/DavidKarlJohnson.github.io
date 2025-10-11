@@ -1,3 +1,9 @@
 .tool-img {
+    cursor: pointer;
     width: 50px;
+}
+
+.tool-img:hover {
+    transition: all 200ms ease-in-out;
+    transform: scale(1.10);
 }
