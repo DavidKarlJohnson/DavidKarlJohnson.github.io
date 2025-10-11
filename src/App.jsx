@@ -44,14 +44,12 @@ function App() {
   return (
     <>
       <Profile 
-          gitHubLink='github.com/davidkarljohnson'
+      gitHubLink='github.com/davidkarljohnson'
       linkedInLink='linkedin.com/in/david-karl-johnson'
       />
       <Projects projectsArr={projects}/>
       <Contact 
-      email='jag@davidjohnson.se' 
-      address='Test-Address 24' 
-      phone='070-7005555' 
+      emailLink='jag@davidjohnson.se'
       gitHubLink='github.com/davidkarljohnson'
       linkedInLink='linkedin.com/in/david-karl-johnson'
       />
