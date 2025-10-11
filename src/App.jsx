@@ -11,35 +11,56 @@ function App() {
       {
         id: crypto.randomUUID(),
         imgSrc: null, 
-        title: 'TODO list', 
-        description: 'My TODO list', 
-        gitHubLink: 'www.github.com',
-        projectLink: 'www.davidjohnson.se'
+        title: 'Q-bot', 
+        description: 'Q-bot är ett automatiserat verktyg som kösätter en användare hos samtliga av Sveriges hyresvärdar. Q-bot genererar ett säkert lösenord till användaren samt håller deras köstatus uppdaterad årligen, så att de aldrighblir av med sina köpoäng!', 
+        gitHubLink: null,
+        projectLink: 'www.davidjohnson.se',
+        toolsUsed: ['JavaScript', 'Python', 'Playwright', 'HTML', 'CSS', 'FastAPI']
       },
       {
         id: crypto.randomUUID(),
         imgSrc: weatherAppImg, 
-        title: 'Weather app', 
-        description: 'Simple weather app for displaying the local weather', 
-        gitHubLink: 'www.github.com',
+        title: 'Väderapp', 
+        description: 'Väderapp som hämtar riktig data via en API', 
+        gitHubLink: 'www.github.com/DavidKarlJohnson/weather-app',
         projectLink: 'www.davidjohnson.se',
         toolsUsed: ['JavaScript', 'HTML', 'CSS', 'Webpack']
       },
       {
         id: crypto.randomUUID(),
         imgSrc: null, 
-        title: 'Calculator', 
-        description: 'Calculator that supports addition, subtraction, multiplication and division', 
-        gitHubLink: 'www.github.com',
-        projectLink: 'www.davidjohnson.se'
+        title: 'Clock it!', 
+        description: '', 
+        gitHubLink: null,
+        projectLink: 'www.davidjohnson.se',
+        toolsUsed: ['JavaScript', 'Vue', 'HTML', 'CSS']
       },
       {
         id: crypto.randomUUID(),
         imgSrc: null, 
-        title: 'Restaurant page', 
-        description: 'Demo for a pizzeria', 
-        gitHubLink: 'www.github.com',
-        projectLink: 'www.davidjohnson.se'
+        title: 'CV mall', 
+        description: 'En mall för att skapa ett personligt CV', 
+        gitHubLink: 'www.github.com/DavidKarlJohnson/cv-application',
+        projectLink: 'www.davidjohnson.se',
+        toolsUsed: ['JavaScript', 'React', 'HTML', 'CSS']
+      },
+      {
+        id: crypto.randomUUID(),
+        imgSrc: null, 
+        title: 'Restaurang sida', 
+        description: 'Hemsida för en fiktiv italiensk restaurang', 
+        gitHubLink: 'www.github.com/DavidKarlJohnson/restaurant-page',
+        projectLink: 'www.davidjohnson.se',
+        toolsUsed: ['JavaScript', 'HTML', 'CSS', 'Webpack']
+      },
+      {
+        id: crypto.randomUUID(),
+        imgSrc: null, 
+        title: 'Tre i rad', 
+        description: 'Det klassiska spelet Tre i rad i webbläsaren!', 
+        gitHubLink: 'www.github.com/DavidKarlJohnson/tic-tac-toe',
+        projectLink: 'www.davidjohnson.se',
+        toolsUsed: ['JavaScript', 'HTML', 'CSS']
       }
     ]);
 
