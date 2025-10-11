@@ -16,6 +16,9 @@ export default function ToolImg({name}) {
         case 'erlang':
             imgSrc = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/erlang/erlang-original.svg";
             break;
+        case 'express':
+            imgSrc = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg";
+            break;
         case 'figma':
             imgSrc = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg";
             break;
