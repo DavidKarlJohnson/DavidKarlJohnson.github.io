@@ -9,14 +9,22 @@ import '../styles/ExternalSiteButton.css';
  * @param {string} title - Tooltip which'll be displayed when hovering the button  
  * @returns {JSX.Element} - Button element
  */
-export default function ExternalSiteButton({logoSrc, url, title}) {
+export default function ExternalSiteButton({logoSrc, url=null, title}) {
     // TODO: Add conditional logic for invalid arguments
+    if (url === null && title.toLowerCase().localeCompare('github') == 0) {
+        url = 'www.github.com/DavidKarlJohnson';
+    };
+
     return ( 
-    <button className="external-site-button">
-        <a href={formatLink(url)} target="_blank" rel="noopener noreferrer" title={title}>
-            <img src={logoSrc} />
-        </a>
-    </button> 
+        <>
+        { url !== null &&
+            <button className="external-site-button">
+                <a href={formatLink(url)} target="_blank" rel="noopener noreferrer" title={title}>
+                    <img src={logoSrc} />
+                </a>
+            </button> 
+        }
+    </>
     )
 }
 

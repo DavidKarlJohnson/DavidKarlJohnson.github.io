@@ -32,7 +32,7 @@ function App() {
         title: 'Clock it!', 
         description: '', 
         gitHubLink: null,
-        projectLink: 'www.davidjohnson.se',
+        projectLink: null,
         toolsUsed: ['JavaScript', 'Vue', 'HTML', 'CSS']
       },
       {
