@@ -69,6 +69,11 @@
     width: 30px;
 }
 
+.tools-group {
+    display: flex;
+}
+
+
 
 @media (max-width: 850px) {
     .project {

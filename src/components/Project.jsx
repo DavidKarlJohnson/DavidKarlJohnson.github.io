@@ -34,10 +34,10 @@ export default function Project({imgSrc=null, title, description, gitHubLink, pr
                     </div>
                 </div>
                 <p>{description}</p>
-                <div className='tools-used'>
+                <div className='tools-group'>
                     {  toolsUsed !== null && 
                         toolsUsed.map(tool =>
-                            <ToolImg name={tool}/>) 
+                            <ToolImg key={tool} name={tool}/>) 
                     }
                 </div>
             </div>
