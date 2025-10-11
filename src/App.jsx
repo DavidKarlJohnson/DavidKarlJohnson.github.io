@@ -1,35 +1,60 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from 'react';
 import './App.css'
+import Profile from './components/Profile'
+import Projects from './components/Projects'
+import Contact from './components/Contact';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [projects, setProjects] = useState(
+    [
+      {
+        id: crypto.randomUUID(),
+        imgSrc: null, 
+        title: 'TODO list', 
+        description: 'My TODO list', 
+        gitHubLink: 'www.github.com',
+        projectLink: 'www.davidjohnson.se'
+      },
+      {
+        id: crypto.randomUUID(),
+        imgSrc: null, 
+        title: 'Weather app', 
+        description: 'Simple weather app for displaying the local weather', 
+        gitHubLink: 'www.github.com',
+        projectLink: 'www.davidjohnson.se'
+      },
+      {
+        id: crypto.randomUUID(),
+        imgSrc: null, 
+        title: 'Calculator', 
+        description: 'Calculator that supports addition, subtraction, multiplication and division', 
+        gitHubLink: 'www.github.com',
+        projectLink: 'www.davidjohnson.se'
+      },
+      {
+        id: crypto.randomUUID(),
+        imgSrc: null, 
+        title: 'Restaurant page', 
+        description: 'Demo for a pizzeria', 
+        gitHubLink: 'www.github.com',
+        projectLink: 'www.davidjohnson.se'
+      }
+    ]);
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Profile />
+      <Projects projectsArr={projects}/>
+      <Contact 
+      email='jag@davidjohnson.se' 
+      address='Test-Address 24' 
+      phone='070-7005555' 
+      gitHubLink='github.com/davidkarljohnson'
+      linkedInLink='linkedin.com'
+      />
     </>
   )
 }
 
 export default App
+

@@ -1,0 +1,25 @@
+.external-site-button {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    transition: all 200ms ease-in-out;
+}
+
+.external-site-button:hover {
+    transition: all 200ms ease-in-out;
+    transform: scale(1.10);
+}
+
+.external-site-button a {
+    height: 100%;
+    width: 100%;
+}
+
+.external-site-button img {
+    height: 100%;
+    width: 100%;
+}
