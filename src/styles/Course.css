@@ -1,3 +1,24 @@
 .course {
+    background-color: rgb(243, 243, 243);
     border: 2px solid black;
+    border-radius: 8px;
+    padding: 15px;
+    max-height: 80px;
+    overflow: hidden;
+    transition: max-height 700ms ease;
+    will-change: max-height;
+}
+
+.course:hover {
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+    max-height: 200px;
+    transition: max-height 700ms ease;
+    will-change: max-height;
+}
+
+.course .tools-group {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
 }

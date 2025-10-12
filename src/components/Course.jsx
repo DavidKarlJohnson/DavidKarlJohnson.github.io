@@ -6,15 +6,15 @@ export default function Course({ name, desc, hp, toolsArr }) {
     return (
         <div className='course'>
             <div className="top-group">
-                <h2>{name}</h2>
-                <span>{hp}</span>
+                <h3>{name}</h3>
+                <div className="tools-group">
+                    { toolsArr.map(tool => (
+                        <ToolImg name={tool} key={tool}/>
+                    )) }
+                </div>
             </div>
+            <span>{hp}</span>
             <p>{desc}</p>
-            <div className="tools-group">
-                { toolsArr.map(tool => (
-                    <ToolImg name={tool} key={tool}/>
-                )) }
-            </div>
         </div>
     )
 }

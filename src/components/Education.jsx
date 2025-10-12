@@ -5,7 +5,7 @@ export default function Education({ courses }) {
 
     return (
         <section className="education">
-            <h1>Utbildning</h1>
+            <h2>Utbildning</h2>
             {
                 courses.map(course => 
                     <Course 
