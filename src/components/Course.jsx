@@ -1,7 +1,8 @@
 import '../styles/Course.css';
 import ToolImg from "./ToolImg"
+import uuLogo from '../assets/uppsala-universitet-logo.png';
 
-export default function Course({ name, desc, hp, toolsArr }) {
+export default function Course({ name, desc, hp, university, toolsArr }) {
     console.log(toolsArr);
     return (
         <div className='course'>
@@ -13,7 +14,13 @@ export default function Course({ name, desc, hp, toolsArr }) {
                     )) }
                 </div>
             </div>
-            <span>{hp}</span>
+            <div className='info-group'>
+                <div>
+                    <img src={uuLogo}></img>
+                    <span>{university}</span>
+                </div>
+                <span>{hp} hp</span>
+            </div>
             <p>{desc}</p>
         </div>
     )

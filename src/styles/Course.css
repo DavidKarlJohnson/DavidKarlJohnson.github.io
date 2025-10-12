@@ -2,9 +2,11 @@
     background-color: rgb(243, 243, 243);
     border: 2px solid black;
     border-radius: 8px;
-    padding: 15px;
-    max-height: 80px;
+    display: flex;
+    flex-direction: column;
+    max-height: 70px;
     overflow: hidden;
+    padding: 10px 20px 0 20px;
     transition: max-height 700ms ease;
     will-change: max-height;
 }
@@ -17,8 +19,37 @@
     will-change: max-height;
 }
 
+.course .top-group {
+    margin-bottom: 12px;
+}
+
+.info-group {
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+}
+
+
+/* Uni logo + name */
+.info-group > div {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+
+.info-group img {
+    width: 30px;
+}
+
 .course .tools-group {
     display: flex;
     flex-direction: row;
     gap: 1vw;
+}
+
+.course .tools-group img {
+    width: 40px;
 }

@@ -13,6 +13,7 @@ export default function Education({ courses }) {
                     name={course.name}
                     desc={course.desc}
                     hp={course.hp}
+                    university={course.university}
                     toolsArr={course.toolsUsed}
                     />
                 )
