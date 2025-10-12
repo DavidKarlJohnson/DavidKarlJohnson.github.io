@@ -70,6 +70,7 @@ function App() {
   return (
     <>
       <Profile 
+      emailLink='jag@davidjohnson.se'
       gitHubLink='github.com/davidkarljohnson'
       linkedInLink='linkedin.com/in/david-karl-johnson'
       hidePortrait={hidePortrait}
