@@ -1,6 +1,5 @@
 import externalLinkLogo from '../assets/external-link-logo.svg';
 import '../styles/Project.css';
-import formatLink from '../utils/formatLink';
 import ExternalSiteButton from './ExternalSiteButton';
 import ToolImg from './ToolImg';
 
