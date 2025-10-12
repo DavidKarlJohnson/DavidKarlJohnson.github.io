@@ -244,7 +244,7 @@ function App() {
         discipline: 'computer science',
         university: 'Uppsala Universitet',
         link: 'https://www.uu.se/utbildning/kurs?query=1DT096',
-        toolsUsed: ['Mips, C, Erlang'] 
+        toolsUsed: ['Mips', 'C', 'Erlang'] 
       },
       {
         id: '1MD034',

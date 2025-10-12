@@ -1,4 +1,5 @@
 import '../styles/ToolImg.css';
+import mipsLogo from '../assets/mips-logo.svg';
 
 export default function ToolImg({name}) {
     let imgSrc = '';
@@ -33,6 +34,9 @@ export default function ToolImg({name}) {
             break;
         case 'jira':
             imgSrc = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg";
+            break;
+        case 'mips':
+            imgSrc = mipsLogo;
             break;
         case 'node':
             imgSrc = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg";
