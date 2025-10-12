@@ -4,11 +4,10 @@
     display: flex;
     filter: grayscale();
     flex-direction: column;
-    width: 380px;
     height: 600px;
-    overflow: auto;
-    overflow-wrap: break-word;
+    overflow: hidden;
     transition: all 200ms ease-in-out;
+    width: 380px;
 }
 
 .project:hover {
@@ -59,6 +58,8 @@
 .project > div:nth-child(2) > p {
     color: rgb(92, 92, 92);
     font-family: 'Roboto', 'Arial', Times, serif;
+    overflow: auto;
+    overflow-wrap: break-word;
 }
 
 .project-links {
@@ -74,8 +75,6 @@
 .tools-group {
     display: flex;
 }
-
-
 
 @media (max-width: 850px) {
     .project {
