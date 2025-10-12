@@ -8,6 +8,10 @@ import weatherAppImg from './assets/project-image-weather-app.png'
 function App() {
   const hideProjects = false;
   const hidePortrait = true;
+  const email = 'jag@davidjohnson.se';
+  const github = 'github.com/davidkarljohnson';
+  const linkedin = 'linkedin.com/in/david-karl-johnson';
+
 
   const [projects, setProjects] = useState(
     [
@@ -70,16 +74,16 @@ function App() {
   return (
     <>
       <Profile 
-      emailLink='jag@davidjohnson.se'
-      gitHubLink='github.com/davidkarljohnson'
-      linkedInLink='linkedin.com/in/david-karl-johnson'
+      emailLink={email}
+      gitHubLink={github}
+      linkedInLink={linkedin}
       hidePortrait={hidePortrait}
       />
       {hideProjects !== true && <Projects projectsArr={projects}/> }
       <Contact 
-      emailLink='jag@davidjohnson.se'
-      gitHubLink='github.com/davidkarljohnson'
-      linkedInLink='linkedin.com/in/david-karl-johnson'
+      emailLink={email}
+      gitHubLink={github}
+      linkedInLink={linkedin}
       />
     </>
   )
