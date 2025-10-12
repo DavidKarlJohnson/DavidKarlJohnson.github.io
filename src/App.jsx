@@ -77,6 +77,26 @@ function App() {
   const [courses, setCourses] = useState(
     [
       {
+        id: 'MMG020',
+        name: 'Förberedande kurs i matematik',
+        desc: 'Denna nätbaserade kurs – kallad Sommarmatte – vänder sig till dig som vill vara ordentligt förberedd. Via vår kursmiljö på nätet, som innehåller ett modernt och tydligt läromedel, får du kontakt med både lärare och kurskamrater. Lärare hjälper dig med dina frågor via ett forum, chatt, e-post och telefon. Du kan planera din läsning själv och få ut så mycket som möjligt av sommaren samtidigt som du pluggar!',
+        hp: 7.5,
+        discipline: 'math',
+        university: 'Göteborgs Universitet',
+        link: 'https://www.gu.se/studera/hitta-utbildning/forberedande-kurs-i-matematik-mmg020',
+        toolsUsed: [] 
+      },
+      {
+        id: 'A237TG',
+        name: 'Grundläggande programmering i Python',
+        desc: 'I denna kurs ges studenten grundläggande kunskaper i programmering baserat på programspråket Python version 3. Kursen består av två delar: teoridel och praktiska programmeringsövningar. I den teoretiska delen introduceras programmering utifrån grundläggande byggstenar, såsom in- och utmatning av information till ett datorprogram, datatyper, selektioner och iterationer. Dessa byggstenar används sedan för att introducera egendefinierade funktioner, moduler, fil- och grafikhantering. Programmering tränas genom praktiska moment där studenten löser ett antal programmeringsuppgifter genom att skriva egna program i Python.',
+        hp: 7.5,
+        discipline: 'computer science',
+        university: 'Högskolan i Borås',
+        link: 'https://kursinfodoc.hb.se/PdfMaker.aspx?type=kurs&code=A237TG&revision=8,000&language=SV',
+        toolsUsed: ['Python'] 
+      },
+      {
         id: '1MA010',
         name: 'Baskurs i matematik',
         desc: 'Denna kurs riktar sig till dig som vill börja läsa fristående kurser i matematik. Kursen täcker grunderna inom matematikens olika delar och behandlar bland annat induktion, aritmetik för rationella och reella tal, elementära funktioner och koordinatsystem i planet.',
@@ -117,6 +137,16 @@ function App() {
         toolsUsed: [] 
       },
       {
+        id: '1DL201',
+        name: 'Programkonstruktion och datastrukturer',
+        desc: 'Introduktion till programmering: syftet med programmering, programmeringsprocessens faser, programmering satt i sitt sammanhang genom exempel på tillämpningar, kort historik över programmering, datorsystemet ur programmerarens synvinkel, programmeringsmiljöer. Algoritmer: vad en algoritm är, programmet som realisering av en algoritm, skillnaden i preciseringsgrad mellan datorprogram och vardagslivets algoritmer.',
+        hp: 20,
+        discipline: 'computer science',
+        university: 'Uppsala Universitet',
+        link: 'https://www.uu.se/utbildning/kursplan?query=47706',
+        toolsUsed: ['JavaScript', 'TypeScript'] 
+      },
+      {
         id: '1DT093',
         name: 'Datorarkitektur',
         desc: 'I kursen tas upp hur moderna datorsystem är uppbyggda, inklusive detaljer om pipelines, minnesorganisation, virtuellt och fysiskt minne samt minnesteknologi. Principer för konstruktion av instruktionsuppsättningar och vad som sätter begränsningar för datorsystem avseende bandbredd, effektförbrukning och kylning ingår. Hur datorsystem interagerar med omvärlden genom in- och utmatningssystem samt avbrott är en viktig del i kursen, liksom synkroniseringstekniker för att hantera samtidighet i datorsystem, och bedöma deras lämplighet i olika situationer.',
@@ -135,6 +165,46 @@ function App() {
         university: 'Uppsala Universitet',
         link: 'https://www.uu.se/utbildning/kurs?query=1MA027',
         toolsUsed: [] 
+      },
+      {
+        id: 'ETE318',
+        name: 'Grunderna i AI',
+        desc: 'Kursen syftar till att ge en introduktion och överblick av artificiell intelligens. Fokus ligger på att förstå begreppet och några viktiga tekniker som hur sökning och maskininlärning fungerar samt konsekvenser av AI på samhället.',
+        hp: 2,
+        discipline: 'computer science',
+        university: 'Linköpings Universitet',
+        link: 'https://liu.se/utbildning/kurs/ete318',
+        toolsUsed: [] 
+      },
+      {
+        id: 'ETE352',
+        name: 'Cybersäkerhet - grunder och medvetenhet',
+        desc: 'Samhällets digitalisering innebär ökade krav på cybersäkerhet. Alla som använder och är beroende av datorer, molntjänster, och nätverk i sitt arbete bör därför ha grundläggande förståelse i detta område. Vad är hoten, hur bedömer man olika hot, hur kan man skydda sig och fatta relevanta beslut för att undvika onödiga risker? Detta är typiska frågor som kommer behandlas under kursens gång. Dessutom kommer vi att diskutera hur man skapar en bra cybersäkerhetskultur i en organisation för att skapa rätt förutsättningar för långsiktig säkerhet.',
+        hp: 3,
+        discipline: 'computer science',
+        university: 'Linköpings Universitet',
+        link: 'https://liu.se/utbildning/kurs/ete352',
+        toolsUsed: [] 
+      },
+      {
+        id: '2IS233',
+        name: 'Inledande programmering med Java',
+        desc: 'Kursen behandlar hur man skapar strukturerade objektorienterade program med hjälp av programmeringsspråket Java. För att uppnå detta behandlas programmeringsbegrepp såsom variabel, metod, selektion, iteration och enklare algoritmer. Kursen ger även en introduktion till objektorientering där klasser, objekt, arv och komposition är centralt. Andra delar som behandlas är dokumentation, felhantering och felsökning. De teoretiska begreppen tillämpas kontinuerligt i övningar och laborationer.',
+        hp: 7.5,
+        discipline: 'computer science',
+        university: 'Uppsala Universitet',
+        link: 'https://www.uu.se/utbildning/kursplan?query=45355',
+        toolsUsed: ['Java'] 
+      },
+      {
+        id: '1TD317',
+        name: 'Datorer och programmering',
+        desc: 'Kursen ger grunderna i programmering och passar nybörjare utan tidigare programmeringsvana. Den tar upp programmeringsspråket C++, vilket idag är ett av de mest använda programmeringsspråken. Det finns flera skäl att lära sig just C++, till exempel att det används mycket framför allt i industrin. Kursen passar också lärare som ska undervisa i programmering i skolan. Programvaran i kursen är fri och inga andra kostnader tillkommer. Ett antal obligatoriska inlämningsuppgifter ges och det är genom arbetet med dessa som större delen av inlärningen sker.',
+        hp: 10,
+        discipline: 'computer science',
+        university: 'Uppsala Universitet',
+        link: 'https://www.uu.se/utbildning/kurs?query=1TD317',
+        toolsUsed: ['C++'] 
       },
       {
         id: '1MA009',
@@ -225,7 +295,19 @@ function App() {
         university: 'Uppsala Universitet',
         link: 'https://www.uu.se/utbildning/kurs?query=1DL251',
         toolsUsed: ['JavaScript', 'HTML', 'CSS', 'Vue', 'Jira'] 
+      },
+      {
+        id: 'ETG102',
+        name: 'Grundläggande databehandling',
+        desc: 'Kursen lär dig att skapa, designa, formatera, utveckla, analysera och presentera kalkylblad med olika typer av input data.',
+        hp: 7.5,
+        discipline: 'other',
+        university: 'Högskolan i Gävle',
+        link: 'https://www.hig.se/kurs?identifier=ETG102',
+        toolsUsed: ['Microsoft Excel'] 
       }
+
+
     ]
   )
 
