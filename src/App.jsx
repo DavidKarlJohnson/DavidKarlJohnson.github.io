@@ -6,6 +6,9 @@ import Contact from './components/Contact';
 import weatherAppImg from './assets/project-image-weather-app.png'
 
 function App() {
+  const hideProjects = false;
+  const hidePortrait = true;
+
   const [projects, setProjects] = useState(
     [
       {
@@ -69,8 +72,9 @@ function App() {
       <Profile 
       gitHubLink='github.com/davidkarljohnson'
       linkedInLink='linkedin.com/in/david-karl-johnson'
+      hidePortrait={hidePortrait}
       />
-      <Projects projectsArr={projects}/>
+      {hideProjects !== true && <Projects projectsArr={projects}/> }
       <Contact 
       emailLink='jag@davidjohnson.se'
       gitHubLink='github.com/davidkarljohnson'
