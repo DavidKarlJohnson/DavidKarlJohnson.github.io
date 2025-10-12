@@ -4,9 +4,11 @@ import Profile from './components/Profile'
 import Projects from './components/Projects'
 import Contact from './components/Contact';
 import weatherAppImg from './assets/project-image-weather-app.png'
+import Education from './components/Education';
 
 function App() {
   const hideProjects = false;
+  const hideCourses = false;
   const hidePortrait = true;
   const email = 'jag@davidjohnson.se';
   const github = 'github.com/davidkarljohnson';
@@ -71,6 +73,33 @@ function App() {
       }
     ]);
 
+
+  const [courses, setCourses] = useState(
+    [
+      {
+        id: '1DL201',
+        name: 'Programkonstruktion och datastrukturer',
+        desc: 'Introduktion till programmering: syftet med programmering, programmeringsprocessens faser, programmering satt i sitt sammanhang genom exempel på tillämpningar, kort historik över programmering, datorsystemet ur programmerarens synvinkel, programmeringsmiljöer.',
+        hp: 20,
+        toolsUsed: ['JavaScript', 'TypeScript'] 
+      },
+      {
+        id: '1DL221',
+        name: 'Imperativ och objektorienterad programmeringsmetodik',
+        desc: 'Kursen ger dig förståelse för de principer som ligger till grund för imperativa och objektorienterade språk och för variationer mellan språken. Du lär dig också att programmera väl i sådana språk och arbeta med programutveckling, dokumentation och testning på ett strukturerat sätt och med hjälp av därtill avsedda verktyg.',
+        hp: 20,
+        toolsUsed: ['C', 'Java'] 
+      },
+      {
+        id: '1MD034',
+        name: 'Systemdesign med ett användarperspektiv',
+        desc: 'Den här kursen ger dig färdigheter och kunskaper i att utforma, utveckla och utvärdera interaktiva användargränssnitt. För att komplettera och förstärka den teoretiska förståelsen innefattar kursen ett mjukvaruutvecklingsprojekt i vilket du utifrån en verksamhetsbeskrivning och kravdokument skapar ett användargränssnitt mot ett IT-system.',
+        hp: 5,
+        toolsUsed: ['Figma'] 
+      }
+    ]
+  )
+
   return (
     <>
       <Profile 
@@ -79,6 +108,7 @@ function App() {
       linkedInLink={linkedin}
       hidePortrait={hidePortrait}
       />
+      {hideCourses !== true && <Education courses={courses}/> }
       {hideProjects !== true && <Projects projectsArr={projects}/> }
       <Contact 
       emailLink={email}
