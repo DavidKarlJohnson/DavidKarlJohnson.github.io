@@ -82,6 +82,7 @@ function App() {
         desc: 'Introduktion till programmering: syftet med programmering, programmeringsprocessens faser, programmering satt i sitt sammanhang genom exempel på tillämpningar, kort historik över programmering, datorsystemet ur programmerarens synvinkel, programmeringsmiljöer.',
         hp: 20,
         university: 'Uppsala Universitet',
+        link: 'https://www.uu.se/utbildning/kurs?query=1DL201',
         toolsUsed: ['JavaScript', 'TypeScript'] 
       },
       {
@@ -90,6 +91,7 @@ function App() {
         desc: 'Kursen ger dig förståelse för de principer som ligger till grund för imperativa och objektorienterade språk och för variationer mellan språken. Du lär dig också att programmera väl i sådana språk och arbeta med programutveckling, dokumentation och testning på ett strukturerat sätt och med hjälp av därtill avsedda verktyg.',
         hp: 20,
         university: 'Uppsala Universitet',
+        link: 'https://www.uu.se/utbildning/kurs?query=1DL221',
         toolsUsed: ['C', 'Java'] 
       },
       {
@@ -98,6 +100,7 @@ function App() {
         desc: 'Den här kursen ger dig färdigheter och kunskaper i att utforma, utveckla och utvärdera interaktiva användargränssnitt. För att komplettera och förstärka den teoretiska förståelsen innefattar kursen ett mjukvaruutvecklingsprojekt i vilket du utifrån en verksamhetsbeskrivning och kravdokument skapar ett användargränssnitt mot ett IT-system.',
         hp: 5,
         university: 'Uppsala Universitet',
+        link: 'https://www.uu.se/utbildning/kurs?query=1MD034',
         toolsUsed: ['Figma'] 
       }
     ]

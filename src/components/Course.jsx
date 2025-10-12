@@ -1,8 +1,10 @@
 import '../styles/Course.css';
 import ToolImg from "./ToolImg"
 import uuLogo from '../assets/uppsala-universitet-logo.png';
+import externalLinkLogo from '../assets/external-link-logo.svg';
+import ExternalSiteButton from './ExternalSiteButton';
 
-export default function Course({ name, desc, hp, university, toolsArr }) {
+export default function Course({ name, desc, hp, university, link=null, toolsArr }) {
     console.log(toolsArr);
     return (
         <div className='course'>
@@ -20,6 +22,12 @@ export default function Course({ name, desc, hp, university, toolsArr }) {
                     <span>{university}</span>
                 </div>
                 <span>{hp} hp</span>
+                { link !== null && <ExternalSiteButton 
+                                        logoSrc={externalLinkLogo}
+                                        url={link}
+                                        title='Course link'
+                                        /> 
+                }
             </div>
             <p>{desc}</p>
         </div>

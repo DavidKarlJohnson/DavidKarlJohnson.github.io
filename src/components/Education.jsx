@@ -14,6 +14,7 @@ export default function Education({ courses }) {
                     desc={course.desc}
                     hp={course.hp}
                     university={course.university}
+                    link={course.link}
                     toolsArr={course.toolsUsed}
                     />
                 )
