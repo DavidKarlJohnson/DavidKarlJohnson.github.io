@@ -5,6 +5,7 @@ import Projects from './components/Projects'
 import Contact from './components/Contact';
 import weatherAppImg from './assets/project-image-weather-app.png'
 import Education from './components/Education';
+import Navigation from './components/Navigation';
 
 function App() {
   const hideProjects = false;
@@ -313,6 +314,7 @@ function App() {
 
   return (
     <>
+      <Navigation/>
       <Profile 
       emailLink={email}
       gitHubLink={github}

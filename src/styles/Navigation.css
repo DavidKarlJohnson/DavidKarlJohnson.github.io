@@ -1,0 +1,36 @@
+.navigation {
+    --border-radius: 15px;
+    --border: 1px solid gray;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    max-width: 60vw;
+}
+
+.navigation > button {
+    background-color: rgb(233, 233, 233);
+    border: none;
+    height: 70px;
+    width: 10vw;
+}
+
+.navigation button:nth-child(1) {
+    border-right: var(--border);
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+}
+
+.navigation button:nth-child(2) {
+    border-right: var(--border);
+
+}
+
+.navigation button:nth-child(3) {
+    border-right: var(--border);
+}
+
+.navigation button:nth-child(4) {
+    border-left: none;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
