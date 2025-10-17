@@ -1,6 +1,15 @@
+.tools-group {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .tool-img {
-    cursor: pointer;
-    width: 50px;
+    max-height: 50px;
+    max-width: 50px;
+    min-width: 50px;
+    min-height: 50px;
 }
 
 .tool-img:hover {

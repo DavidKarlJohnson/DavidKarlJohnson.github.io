@@ -304,7 +304,7 @@ function App() {
         discipline: 'other',
         university: 'Högskolan i Gävle',
         link: 'https://www.hig.se/kurs?identifier=ETG102',
-        toolsUsed: ['Microsoft Excel'] 
+        toolsUsed: ['Excel'] 
       }
 
 

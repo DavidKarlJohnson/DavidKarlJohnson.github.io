@@ -1,5 +1,6 @@
 import '../styles/ToolImg.css';
 import mipsLogo from '../assets/mips-logo.svg';
+import excelLogo from '../assets/excel-logo.png'
 
 export default function ToolImg({name}) {
     let imgSrc = '';
@@ -16,6 +17,9 @@ export default function ToolImg({name}) {
             break;
         case 'erlang':
             imgSrc = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/erlang/erlang-original.svg";
+            break;
+        case 'excel':
+            imgSrc = excelLogo;
             break;
         case 'express':
             imgSrc = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg";
