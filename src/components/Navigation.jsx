@@ -3,7 +3,7 @@ import '../styles/Navigation.css'
 export default function Navigation() {
 
     function scrollTo(elementSelector) {
-        document.querySelector(elementSelector).scrollIntoView(true);
+        document.querySelector(elementSelector).scrollIntoView({ behavior: 'smooth' });
     }
 
     return (
