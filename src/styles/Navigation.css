@@ -5,6 +5,9 @@
     display: flex;
     justify-content: center;
     max-width: 60vw;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 .navigation > button {
@@ -16,7 +19,6 @@
 
 .navigation button:nth-child(1) {
     border-right: var(--border);
-    border-top-left-radius: var(--border-radius);
     border-bottom-left-radius: var(--border-radius);
 }
 
@@ -31,7 +33,6 @@
 
 .navigation button:nth-child(4) {
     border-left: none;
-    border-top-right-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
 }
 
