@@ -41,9 +41,12 @@
     flex-direction: row;
 }
 
-
 .info-group img {
     width: 30px;
+}
+
+.course > p  {
+    overflow: auto;
 }
 
 .course .tools-group {
