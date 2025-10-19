@@ -17,9 +17,16 @@ export default function ExternalSiteButton({logoSrc, url=null, title}) {
 
     return ( 
         <>
-        { url !== null &&
+        { url !== null && url !== 'jag@davidjohnson.se' &&
             <button className="external-site-button">
                 <a href={formatLink(url)} target="_blank" rel="noopener noreferrer" title={title}>
+                    <img src={logoSrc} />
+                </a>
+            </button> 
+        }
+        { url === 'jag@davidjohnson.se' &&
+            <button className="external-site-button">
+                <a href={`mailto:${url}`} title={title}>
                     <img src={logoSrc} />
                 </a>
             </button> 
