@@ -1,6 +1,6 @@
 import '../styles/Course.css';
 import ToolImg from "./ToolImg"
-import uuLogo from '../assets/uppsala-universitet-logo.svg';
+import UniversityImg from './UniversityImg';
 import externalLinkLogo from '../assets/external-link-logo.svg';
 import ExternalSiteButton from './ExternalSiteButton';
 
@@ -18,7 +18,7 @@ export default function Course({ name, desc, hp, university, link=null, toolsArr
             </div>
             <div className='info-group'>
                 <div>
-                    <img src={uuLogo}></img>
+                    <UniversityImg name={university}/>
                     <span>{university}</span>
                 </div>
                 <span>{hp} hp</span>
