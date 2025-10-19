@@ -1,6 +1,6 @@
 import '../styles/Course.css';
 import ToolImg from "./ToolImg"
-import uuLogo from '../assets/uppsala-universitet-logo.png';
+import uuLogo from '../assets/uppsala-universitet-logo.svg';
 import externalLinkLogo from '../assets/external-link-logo.svg';
 import ExternalSiteButton from './ExternalSiteButton';
 
