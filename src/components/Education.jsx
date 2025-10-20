@@ -6,9 +6,19 @@ export default function Education({ courses }) {
     function toggleCourseVisibility(selector) {
         const elem = document.querySelector(selector);
         if (elem) {
-            elem.style.display === "none" 
-            ? elem.style.display = "" 
-            : elem.style.display = "none" 
+            if (elem.style.maxHeight === "3000px") {
+                elem.style.maxHeight = "0px";
+                elem.style.padding = "0px";
+                elem.childNodes.forEach(node => {
+                    node.style.visibility = 'hidden';
+                }) 
+            } else {
+                elem.style.maxHeight = "3000px";
+                elem.style.padding = "50px";
+                elem.childNodes.forEach(node => {
+                    node.style.visibility = 'visible';
+                }) 
+            }
         }
     }
 

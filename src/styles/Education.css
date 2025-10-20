@@ -3,16 +3,24 @@
     border: 2px solid pink;
     display: flex;
     flex-direction: column;
-    padding: 0vw var(--root-padding);
+    padding: 0vw var(--root-padding) 0vw var(--root-padding);  
 }
 
-.education > h2 {
-    justify-self: center;
-    font-size: 2em;
+.education > h3 {
+    background-color: rgb(209, 209, 209, 0.3);
+    font-size: 40px;
+    margin: 0;
+    width: 100%;
 }
 
 .education-category {
+    background-color: rgb(209, 209, 209, 0.3);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     gap: 1vh;
+    max-height: 0px;  /* Set from the 'Education' component */
+    overflow-y: auto;   
+    transition: max-height 2s ease, padding 1s ease;;
+    will-change: max-height, padding;
 }
