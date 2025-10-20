@@ -1,16 +1,31 @@
 .education {
     align-items: center;
-    border: 2px solid pink;
     display: flex;
     flex-direction: column;
     padding: 0vw var(--root-padding) 0vw var(--root-padding);  
 }
 
 .education > h3 {
-    background-color: rgb(209, 209, 209, 0.3);
+    background-color: rgba(197, 197, 197, 0.3);
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid gray;
     font-size: 40px;
     margin: 0;
+    padding: 40px 0 40px 0;
+    text-align: center;
     width: 100%;
+}
+
+.education > #computer-science {
+    background-color: rgba(159, 204, 255, 0.2);
+}
+
+.education > #math {
+    background-color: rgba(159, 255, 175, 0.2);
+}
+
+.education > #other {
+    background-color: rgba(255, 159, 159, 0.2);
 }
 
 .education-category {
