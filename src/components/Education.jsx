@@ -1,21 +1,26 @@
 import '../styles/Education.css';
 import Course from "./Course";
 import expandImg from '../assets/expand.svg';
+import collapseImg from '../assets/collapse.svg';
 
 export default function Education({ courses }) {
 
-    function toggleCourseVisibility(selector) {
-        const elem = document.querySelector(selector);
+        function toggleCourseVisibility(e, selector) {
+            const elem = document.querySelector(selector);
+            const clickedElem = e.currentTarget;
+            const expanderImg = clickedElem.childNodes[1];
         if (elem) {
             if (elem.style.maxHeight === "3000px") {
                 elem.style.maxHeight = "0px";
                 elem.style.padding = "0px";
+                expanderImg.src = expandImg;
                 elem.childNodes.forEach(node => {
                     node.style.visibility = 'hidden';
                 }) 
             } else {
                 elem.style.maxHeight = "3000px";
                 elem.style.padding = "50px";
+                expanderImg.src = collapseImg;
                 elem.childNodes.forEach(node => {
                     node.style.visibility = 'visible';
                 }) 
@@ -26,7 +31,7 @@ export default function Education({ courses }) {
     return (
         <section className="education">
             <h2>Utbildning</h2>
-            <div className='education-category-header' onClick={() => toggleCourseVisibility('#computer-science')}>
+            <div className='education-category-header' onClick={(e) => toggleCourseVisibility(e, '#computer-science')}>
                 <h3>Datavetenskap</h3>
                 <img src={expandImg}/>
             </div>
@@ -47,7 +52,7 @@ export default function Education({ courses }) {
                         ))
                 }
             </div>
-            <div className='education-category-header' onClick={() => toggleCourseVisibility('#math')}>
+            <div className='education-category-header' onClick={(e) => toggleCourseVisibility(e, '#math')}>
                 <h3>Matematik</h3>
                 <img src={expandImg}/>
             </div>
@@ -67,7 +72,7 @@ export default function Education({ courses }) {
                         ))
                 }
             </div>
-            <div className='education-category-header' onClick={() => toggleCourseVisibility('#other')}>
+            <div className='education-category-header' onClick={(e) => toggleCourseVisibility(e, '#other')}>
                 <h3>Övrigt</h3>
                 <img src={expandImg}/>
             </div>

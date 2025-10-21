@@ -17,6 +17,15 @@
     width: 100%;
 }
 
+.education-category-header > h3 {
+    margin-left: auto;
+}
+
+.education-category-header > img {
+    width: 40px;
+    margin-left: auto;
+}
+
 .education > #computer-science {
     background-color: rgba(159, 204, 255, 0.2);
 }
