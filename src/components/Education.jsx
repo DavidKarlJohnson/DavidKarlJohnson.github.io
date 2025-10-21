@@ -1,5 +1,6 @@
 import '../styles/Education.css';
-import Course from "./Course"
+import Course from "./Course";
+import expandImg from '../assets/expand.svg';
 
 export default function Education({ courses }) {
 
@@ -25,7 +26,10 @@ export default function Education({ courses }) {
     return (
         <section className="education">
             <h2>Utbildning</h2>
-            <h3 onClick={() => toggleCourseVisibility('#computer-science')}>Datavetenskap</h3>
+            <div className='education-category-header' onClick={() => toggleCourseVisibility('#computer-science')}>
+                <h3>Datavetenskap</h3>
+                <img src={expandImg}/>
+            </div>
             <div className='education-category' id='computer-science'>
                 {
                     courses
@@ -43,7 +47,10 @@ export default function Education({ courses }) {
                         ))
                 }
             </div>
-            <h3 onClick={() => toggleCourseVisibility('#math')}>Matematik</h3>
+            <div className='education-category-header' onClick={() => toggleCourseVisibility('#math')}>
+                <h3>Matematik</h3>
+                <img src={expandImg}/>
+            </div>
             <div className='education-category' id='math'>
                 {   courses
                         .filter(course => course.discipline.localeCompare('math') === 0)
@@ -60,7 +67,10 @@ export default function Education({ courses }) {
                         ))
                 }
             </div>
-            <h3 onClick={() => toggleCourseVisibility('#other')}>Övrigt</h3>
+            <div className='education-category-header' onClick={() => toggleCourseVisibility('#other')}>
+                <h3>Övrigt</h3>
+                <img src={expandImg}/>
+            </div>
             <div className='education-category' id='other'>
                 {   courses
                         .filter(course => course.discipline.localeCompare('math') !== 0 &&

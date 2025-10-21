@@ -5,13 +5,14 @@
     padding: 0vw var(--root-padding) 0vw var(--root-padding);  
 }
 
-.education > h3 {
+.education-category-header {
     background-color: rgba(197, 197, 197, 0.3);
     box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.3);
     border-bottom: 2px solid gray;
+    display: flex;
     font-size: 40px;
+    justify-content: center;
     margin: 0;
-    padding: 40px 0 40px 0;
     text-align: center;
     width: 100%;
 }
