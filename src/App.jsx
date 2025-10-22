@@ -306,6 +306,36 @@ function App() {
         university: 'Högskolan i Gävle',
         link: 'https://www.hig.se/kurs?identifier=ETG102',
         toolsUsed: ['Excel'] 
+      },
+      {
+        id: '1DL242',
+        name: 'Avancerad mjukvarudesign',
+        desc: 'Kursen ger grundläggande erfarenheter i programvarudesign med särskilt fokus på design av objektorienterade system, från analys av krav till systemarkitektur (systemets beståndsdelar och hur de relaterar till hårdvara) och lågnivådesign (klasser, deras relationer och metoder). Kursen berör också designprinciper, best practices och design- och arkitekturmönster och orienterar i UML - den modelleringsnotation som är industristandard idag.',
+        hp: 5,
+        discipline: 'computer science',
+        university: 'Uppsala Universitet',
+        link: 'https://www.uu.se/utbildning/kurs?query=1DL242',
+        toolsUsed: [] 
+      },
+      {
+        id: '1DT072',
+        name: 'Säkra datorsystem I',
+        desc: 'I denna kurs tas tekniska aspekter på datasäkerhet upp. Grundläggande principer och teoretiska modeller för säkerhet, som identifiering, äkthet, åtkomstkontroll och informationsflödeskontroll behandlas. Ett mål i kursen att utveckla en förmåga att kunna identifiera svagheter och styrkor i olika sätt att hantera datasäkerhet.',
+        hp: 5,
+        discipline: 'computer science',
+        university: 'Uppsala Universitet',
+        link: 'https://www.uu.se/utbildning/kurs?query=1DT072',
+        toolsUsed: [] 
+      },
+      {
+        id: '1DL610',
+        name: 'Mjukvarutestning',
+        desc: 'Modern mjukvaruutveckling är en komplicerad process och det är viktigt att programmerare har effektiva verktyg för att minska antalet fel. Ett sätt att upptäcka fel är att testa systemet och jämföra med det förväntade beteendet. I denna kurs får du lära dig modern teori och praktik kring testning och hur dessa tekniker kan användas i deras egna programmeringsprojekt.',
+        hp: 5,
+        discipline: 'computer science',
+        university: 'Uppsala Universitet',
+        link: 'https://www.uu.se/utbildning/kurs?query=1DL610',
+        toolsUsed: [] 
       }
 
 
