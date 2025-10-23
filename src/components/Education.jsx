@@ -14,6 +14,7 @@ export default function Education({ courses }) {
                 elem.style.maxHeight = "0px";
                 elem.style.padding = "0px";
                 expanderImg.src = expandImg;
+                expanderImg.title = 'Expand';
                 elem.childNodes.forEach(node => {
                     node.style.visibility = 'hidden';
                 }) 
@@ -21,6 +22,7 @@ export default function Education({ courses }) {
                 elem.style.maxHeight = "3000px";
                 elem.style.padding = "50px";
                 expanderImg.src = collapseImg;
+                expanderImg.title = 'Collapse';
                 elem.childNodes.forEach(node => {
                     node.style.visibility = 'visible';
                 }) 
@@ -33,7 +35,7 @@ export default function Education({ courses }) {
             <h2>Utbildning</h2>
             <div className='education-category-header' onClick={(e) => toggleCourseVisibility(e, '#computer-science')}>
                 <h3>Datavetenskap</h3>
-                <img src={expandImg}/>
+                <img src={expandImg} title='Expand'/>
             </div>
             <div className='education-category' id='computer-science'>
                 {
@@ -54,7 +56,7 @@ export default function Education({ courses }) {
             </div>
             <div className='education-category-header' onClick={(e) => toggleCourseVisibility(e, '#math')}>
                 <h3>Matematik</h3>
-                <img src={expandImg}/>
+                <img src={expandImg} title='Expand'/>
             </div>
             <div className='education-category' id='math'>
                 {   courses
@@ -74,7 +76,7 @@ export default function Education({ courses }) {
             </div>
             <div className='education-category-header' onClick={(e) => toggleCourseVisibility(e, '#other')}>
                 <h3>Övrigt</h3>
-                <img src={expandImg}/>
+                <img src={expandImg} title='Expand'/>
             </div>
             <div className='education-category' id='other'>
                 {   courses
