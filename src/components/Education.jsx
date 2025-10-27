@@ -2,6 +2,7 @@ import '../styles/Education.css';
 import Course from "./Course";
 import expandImg from '../assets/expand.svg';
 import collapseImg from '../assets/collapse.svg';
+import UniversityImg from './UniversityImg';
 
 export default function Education({ courses }) {
 
@@ -33,6 +34,19 @@ export default function Education({ courses }) {
     return (
         <section className="education">
             <h2>Utbildning</h2>
+            <div className='education-info'>
+                <div className='education-info-top'>
+                    <h3>Kandidatexamen Datavetenskap</h3>
+                    <div>
+                        <div className='university-group'>
+                            <UniversityImg name={'Uppsala Universitet'}/>
+                            <span>Uppsala Universitet</span>
+                        </div>
+                        <span className='university-date'>2023 - 2026</span>
+                    </div>
+                </div>
+                <p>Span</p>
+            </div>
             <div className='education-category-header' onClick={(e) => toggleCourseVisibility(e, '#computer-science')}>
                 <h3>Datavetenskap</h3>
                 <img src={expandImg} title='Expand'/>

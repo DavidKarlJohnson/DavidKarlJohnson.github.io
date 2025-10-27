@@ -1,16 +1,20 @@
 .education {
     align-items: center;
+    border-radius: 5px;
     display: flex;
-    flex-direction: column;
-    padding: 0vw var(--root-padding) 0vw var(--root-padding);  
+    background-color: rgb(241, 241, 241);
+    flex-direction: column;  
+    padding: 20px;
 }
 
 .education-category-header {
-    background-color: #c5c5c54d;
+    align-items: center;
+    background-color: rgba(197, 197, 197, 1);
     box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.3);
     border-bottom: 2px solid gray;
     display: flex;
     font-size: 40px;
+    height: 80px;
     justify-content: center;
     margin: 0;
     text-align: center;
@@ -27,7 +31,9 @@
 }
 
 .education-category-header > h3 {
-    margin-left: auto;
+    font-size: 30px;
+    margin: 0 0 0 auto;
+    padding: 0;
 }
 
 .education-category-header > img {
@@ -58,3 +64,44 @@
     transition: max-height 2s ease, padding 1s ease;;
     will-change: max-height, padding;
 }
+
+.education-info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.education-info-top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.education-info-top > h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+}
+
+/* University group + dates */
+.education-info-top > div {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.university-group {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.university-group img {
+    width: 40px;
+}
+
