@@ -8,8 +8,26 @@
 .profile div:first-child {
     display: flex;
     justify-content: center;
+    transition: filter 2s ease, transform 2s ease;
+    will-change: filter, transform;
 }
 
+.profile div:first-child:hover {
+    filter: sepia(100%);
+    transform: scale(1.1);
+    transition: filter 2s ease, transform 2s ease;
+}
+
+.profile-picture  {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    max-height:  var(--profile-height);
+    transition: box-shadow 2s ease;
+}
+
+.profile-picture:hover {
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 2s ease;
+}
 
 /* Name */
 .profile div:first-child span {
@@ -19,17 +37,12 @@
     font-size: 3rem;
     position: absolute;
     overflow: hidden;
-    white-space: nowrap;
+    pointer-events: none;
     text-align: center;
-    text-overflow: ellipsis; 
+    text-overflow: ellipsis;
+    white-space: nowrap; 
     width: 500px;  /* TODO: Change to dynamic sizing */
 }
-
-.profile-picture  {
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-    max-height:  var(--profile-height);
-}
-
 
 .about-group {
     align-self: center;

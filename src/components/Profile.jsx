@@ -12,7 +12,7 @@ export default function Profile({emailLink=null, gitHubLink, linkedInLink, hideP
         <section className="profile">
             <div>   
                 { hidePortrait !== true && <img className="profile-picture" src={personLake} /> }
-                { hidePortrait !== false && <img className="profile-picture" src={noProfilePic} /> }
+                { hidePortrait !== false && <img className="profile-picture" src={noProfilePic} /> }    
                 <span>{name}</span>
             </div>
             <div className="about-group">

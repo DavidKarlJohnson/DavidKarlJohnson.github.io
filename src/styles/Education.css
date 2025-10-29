@@ -10,7 +10,7 @@
 
 .education-category-header {
     align-items: center;
-    background-color: rgba(197, 197, 197, 1);
+    background-color: rgb(218, 218, 218);
     box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.3);
     border-bottom: 2px solid gray;
     display: flex;
@@ -42,20 +42,8 @@
     width: var(--expander-width);
 }
 
-.education > #computer-science {
-    background-color: rgba(159, 204, 255, 0.2);
-}
-
-.education > #math {
-    background-color: rgba(159, 255, 175, 0.2);
-}
-
-.education > #other {
-    background-color: rgba(255, 159, 159, 0.2);
-}
-
 .education-category {
-    background-color: rgb(209, 209, 209, 0.3);
+    background-color: rgba(196, 196, 196, 0.3);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;

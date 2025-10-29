@@ -10,7 +10,7 @@ import Navigation from './components/Navigation';
 function App() {
   const hideProjects = false;
   const hideCourses = false;
-  const hidePortrait = true;
+  const hidePortrait = false;
   const email = 'jag@davidjohnson.se';
   const github = 'github.com/davidkarljohnson';
   const linkedin = 'linkedin.com/in/david-karl-johnson';

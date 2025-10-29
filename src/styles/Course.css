@@ -16,13 +16,38 @@
     background-color: rgb(250, 250, 250);
     border: 2px solid black;
     cursor: pointer;
-    max-height: 200px;
+    max-height: 250px;
     transition: max-height 700ms ease;
     will-change: max-height;
 }
 
 .course .top-group {
-    margin-bottom: 12px;
+    align-items: center;
+    display: flex;
+    min-height: 40px;
+    margin-bottom: 22px;
+    margin-top: 6px;
+    flex-wrap: wrap;
+}
+
+.course .top-group > h3  {
+    margin: 0;
+    padding: 0;
+    font-size: clamp(1.0rem, 0.75rem + 1.0vw, 1.2rem);
+    width: 50%;
+}
+
+.course .tools-group {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 50%;
+}
+
+.course .tools-group img {
+    height: 10px;
 }
 
 .info-group {
@@ -40,24 +65,13 @@
     gap: 10px;
     flex-direction: row;
 }
-    
+
 .info-group img {
     width: 30px;
 }
 
 .course > p  {
+    margin: 0;
     overflow: auto;
-}
-
-.course .tools-group {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1vw;
-}
-
-.course .tools-group img {
-    width: 40px;
+    padding: 0;
 }
