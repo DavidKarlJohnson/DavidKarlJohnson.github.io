@@ -13,7 +13,7 @@
 .navigation > button {
     background-color: rgb(233, 233, 233);
     border: none;
-    height: 70px;
+    height: var(--nav-btn-height);
     min-width: 15vw;
 }
 
