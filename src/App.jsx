@@ -335,7 +335,7 @@ function App() {
         discipline: 'computer science',
         university: 'Uppsala Universitet',
         link: 'https://www.uu.se/utbildning/kurs?query=1DL610',
-        toolsUsed: [] 
+        toolsUsed: ['Python'] 
       }
 
 
