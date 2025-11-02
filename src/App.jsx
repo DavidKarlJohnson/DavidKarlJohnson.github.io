@@ -4,13 +4,14 @@ import Profile from './components/Profile'
 import Projects from './components/Projects'
 import Contact from './components/Contact';
 import weatherAppImg from './assets/project-image-weather-app.png'
+import qbotImg from './assets/qbot.png'
 import Education from './components/Education';
 import Navigation from './components/Navigation';
 
 function App() {
   const hideProjects = false;
   const hideCourses = false;
-  const hidePortrait = false;
+  const hidePortrait = true;
   const email = 'jag@davidjohnson.se';
   const github = 'github.com/davidkarljohnson';
   const linkedin = 'linkedin.com/in/david-karl-johnson';
@@ -20,7 +21,7 @@ function App() {
     [
       {
         id: crypto.randomUUID(),
-        imgSrc: null, 
+        imgSrc: qbotImg, 
         title: 'Q-bot', 
         description: 'Q-bot är ett automatiserat verktyg som kösätter en användare hos samtliga av Sveriges hyresvärdar. Q-bot genererar ett säkert lösenord till användaren samt håller deras köstatus uppdaterad årligen, så att de aldrighblir av med sina köpoäng!', 
         gitHubLink: null,
