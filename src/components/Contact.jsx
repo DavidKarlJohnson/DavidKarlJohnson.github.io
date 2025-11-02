@@ -8,7 +8,7 @@ export default function Contact({emailLink, gitHubLink, linkedInLink}) {
         <footer className="contact-group">
             <div>
                 <h2>Kontakta mig</h2>
-                <p>Please get in touch if you think our work could be mutually beneficial!</p>
+                <p>Välkommen att kontakta mig om du ser möjligheter till samarbete!</p>
                 {emailLink !== null && 
                     <div className='contact-info'>
                         <ExternalSiteButton 
@@ -17,7 +17,7 @@ export default function Contact({emailLink, gitHubLink, linkedInLink}) {
                             title='Email'
                         /> 
                         <span>{emailLink}</span>
-                    </div>
+                    </div>  
                 }
                 {linkedInLink !== null && 
                     <div className='contact-info'>

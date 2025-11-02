@@ -46,7 +46,7 @@ export default function Education({ courses }) {
                     </div>
                 </div>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                Kandidatprogrammet i Datavetenskap vid Uppsala universitet ger breda och djupa kunskaper inom programmering, systemutveckling, datorarkitektur, algoritmer och cybersäkerhet. Utbildningen kombinerar teori och praktik med fokus på problemlösning, effektiv mjukvarudesign och tillförlitliga system.</p>
             </div>
             <div className='education-category-header' onClick={(e) => toggleCourseVisibility(e, '#computer-science')}>
                 <h3>Datavetenskap</h3>
