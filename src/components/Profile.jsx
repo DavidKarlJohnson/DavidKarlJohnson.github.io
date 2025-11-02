@@ -1,6 +1,5 @@
 import '../styles/Profile.css';
 import personLake from '../assets/person-lake.jpg';
-import noProfilePic from '../assets/project-image-weather-app.png';
 import ExternalSiteButton from './ExternalSiteButton';
 import emailIcon from '../assets/email.svg'
 
@@ -11,9 +10,8 @@ export default function Profile({emailLink=null, gitHubLink, linkedInLink, hideP
     return (
         <section className="profile">
             <div>   
-                { hidePortrait !== true && <img className="profile-picture" src={personLake} /> }
-                { hidePortrait !== false && <img className="profile-picture" src={noProfilePic} /> }    
-                <span>{name}</span>
+                { hidePortrait === false && <img className="profile-picture" src={personLake} /> }
+                { hidePortrait === false && <span>{name}</span> }
             </div>
             <div className="about-group">
                 <h1>Om mig</h1>
