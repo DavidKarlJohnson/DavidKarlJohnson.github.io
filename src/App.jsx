@@ -5,6 +5,7 @@ import Projects from './components/Projects'
 import Contact from './components/Contact';
 import weatherAppImg from './assets/project-image-weather-app.png'
 import qbotImg from './assets/qbot.png'
+import cvAppImg from './assets/cv_application.png'
 import Education from './components/Education';
 import Navigation from './components/Navigation';
 
@@ -48,7 +49,7 @@ function App() {
       },
       {
         id: crypto.randomUUID(),
-        imgSrc: null, 
+        imgSrc: cvAppImg, 
         title: 'CV mall', 
         description: 'En mall för att skapa ett personligt CV', 
         gitHubLink: 'www.github.com/DavidKarlJohnson/cv-application',

@@ -1,6 +1,7 @@
 body {
   --nav-btn-height: 70px;
   --secondary-color: rgb(27, 196, 202);
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   height: 100vh;
   padding: 0;
