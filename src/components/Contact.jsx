@@ -1,6 +1,5 @@
 import emailIcon from '../assets/email.svg'
 import '../styles/Contact.css';
-import personLake from '../assets/person-lake.jpg';
 import ExternalSiteButton from './ExternalSiteButton';
 
 
@@ -41,7 +40,6 @@ export default function Contact({emailLink, gitHubLink, linkedInLink}) {
                     </div>
                 }
             </div>
-            <img src={personLake} />
         </footer>
     );
 }

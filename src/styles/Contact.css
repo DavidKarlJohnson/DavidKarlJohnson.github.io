@@ -27,11 +27,6 @@
     padding: 0;
 }
 
-.contact-group > img {  
-    max-height: 100%;
-    width: 33vw;
-}
-
 .contact-info {
     align-items: center;
     display: flex;
