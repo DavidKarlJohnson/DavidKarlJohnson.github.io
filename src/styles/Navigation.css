@@ -1,0 +1,52 @@
+.navigation {
+    --border-radius: 15px;
+    --border: 1px solid gray;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    max-width: 60vw;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.navigation > button {
+    background-color: rgb(233, 233, 233);
+    border: none;
+    color: rgb(83, 83, 83);
+    font-size: 20px;
+    font-weight: bold;
+    height: var(--nav-btn-height);
+    min-width: 15vw;
+}
+
+.navigation button:nth-child(1) {
+    border-right: var(--border);
+    border-bottom-left-radius: var(--border-radius);
+}
+
+.navigation button:nth-child(2) {
+    border-right: var(--border);
+
+}
+
+.navigation button:nth-child(3) {
+    border-right: var(--border);
+}
+
+.navigation button:nth-child(4) {
+    border-left: none;
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.navigation button:hover {
+    background-color: rgb(209, 209, 209);
+    cursor: pointer;
+    
+}
+
+@media (max-width: 850px) {
+    .navigation > button {
+        min-width: 20vw;
+    }
+}

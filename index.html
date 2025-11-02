@@ -1,39 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="javascript.js" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>David Johnson</title>
-</head>
-<body>
-    <div class="icons">
-        <div class="icon-container">
-        <a href="https://www.linkedin.com/in/david-karl-johnson/" target="TAB" rel="noopener noreferrer">
-            <img src="./images/linkedin.svg" title="Linkedin" alt="Linkedin logo"> 
-        </a>
-        </div>
-        
-        <div class="icon-container">
-            <a href="https://github.com/DavidKarlJohnson" target="TAB" rel="noopener noreferrer">
-                <img src="./images/github.svg" title="Github" alt="Github logo">
-            </a>
-        </div>
-        <div class="icon-container">
-            <img src="./images/mail.svg" title="Email" alt="Email logo" onclick="showEmailPopup()">
-        </div>
-
-        <div class="icon-container">
-            <a href="./qbot/ui/index.html" target="_blank" rel="noopener noreferrer">
-                <img src="./images/robot.svg" title="Q-bot" alt="Robot logo">
-            </a>
-        </div>
-    </div>
-
-    <div class="email-popup">
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email" value="jag@davidjohnson.se">
-    </div>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

@@ -1,0 +1,17 @@
+.tools-group {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.tool-img {
+    max-height: 50px;
+    max-width: 50px;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.tool-img:hover {
+    transition: all 200ms ease-in-out;
+    transform: scale(1.10);
+}

@@ -1,0 +1,98 @@
+.profile {
+    --profile-height: 30vh;
+    display: flex;
+    margin-top: var(--nav-btn-height);
+    padding: 0vw var(--root-padding);
+}
+
+/* Profile picture group */
+.profile div:first-child {
+    display: flex;
+    justify-content: center;
+    transition: filter 2s ease, transform 2s ease;
+    will-change: filter, transform;
+}
+
+.profile div:first-child:hover {
+    filter: sepia(100%);
+    transform: scale(1.1);
+    transition: filter 2s ease, transform 2s ease;
+}
+
+.profile-picture  {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    max-height:  var(--profile-height);
+    transition: box-shadow 2s ease;
+}
+
+.profile-picture:hover {
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 2s ease;
+}
+
+/* Name */
+.profile div:first-child span {
+    align-self: flex-end;
+    color: white;
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;    
+    font-size: 3rem;
+    position: absolute;
+    overflow: hidden;
+    pointer-events: none;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    width: 500px;  /* TODO: Change to dynamic sizing */
+}
+
+.about-group {
+    align-self: center;
+    background-color: white;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+    max-height: 70%;
+    margin: 0;
+    height: calc(var(--profile-height) * 0.6);
+    max-width: 1237px;
+    padding: 2%;
+}
+
+.about-group * {
+    margin: 0;
+}
+
+.about-group > h1 {
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+.about-group > p {
+    color: rgb(83, 83, 83);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    overflow: auto;
+}
+
+/* img links container */
+.about-group div:last-of-type {
+    align-self: flex-end;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.about-group button {
+    width: 30px;
+}
+
+@media (max-width: 850px) {
+    .profile {
+        flex-direction: column;
+    }
+
+    .about-group {
+        height: auto;
+    }
+}
