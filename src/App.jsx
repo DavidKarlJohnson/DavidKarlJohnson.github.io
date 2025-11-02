@@ -24,7 +24,7 @@ function App() {
         imgSrc: qbotImg, 
         title: 'Q-bot', 
         description: 'Q-bot är ett automatiserat verktyg som kösätter en användare hos samtliga av Sveriges hyresvärdar. Q-bot genererar ett säkert lösenord till användaren samt håller deras köstatus uppdaterad årligen, så att de aldrighblir av med sina köpoäng!', 
-        gitHubLink: null,
+        gitHubLink: 'https://github.com/Operating-systems-katniss/Katniss',
         projectLink: 'www.davidjohnson.se',
         toolsUsed: ['JavaScript', 'Python', 'Playwright', 'HTML', 'CSS', 'FastAPI']
       },
