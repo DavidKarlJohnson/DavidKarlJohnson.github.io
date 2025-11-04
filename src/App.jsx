@@ -5,6 +5,7 @@ import Projects from './components/Projects'
 import Contact from './components/Contact';
 import weatherAppImg from './assets/project-image-weather-app.png'
 import qbotImg from './assets/qbot.png'
+import restaurantImg from './assets/restaurant-page.png'
 import cvAppImg from './assets/cv_application.png'
 import Education from './components/Education';
 import Navigation from './components/Navigation';
@@ -58,11 +59,11 @@ function App() {
       },
       {
         id: crypto.randomUUID(),
-        imgSrc: null, 
+        imgSrc: restaurantImg, 
         title: 'Restaurang sida', 
         description: 'Hemsida för en fiktiv italiensk restaurang', 
         gitHubLink: 'www.github.com/DavidKarlJohnson/restaurant-page',
-        projectLink: 'www.davidjohnson.se',
+        projectLink: null,
         toolsUsed: ['JavaScript', 'HTML', 'CSS', 'Webpack']
       },
       {
