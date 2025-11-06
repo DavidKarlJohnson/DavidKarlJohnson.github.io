@@ -27,7 +27,7 @@ function App() {
         title: 'Q-bot', 
         description: 'Q-bot är ett automatiserat verktyg som kösätter en användare hos samtliga av Sveriges hyresvärdar. Q-bot genererar ett säkert lösenord till användaren samt håller deras köstatus uppdaterad årligen, så att de aldrighblir av med sina köpoäng!', 
         gitHubLink: 'https://github.com/Operating-systems-katniss/Katniss',
-        projectLink: 'www.davidjohnson.se',
+        projectLink: null,
         toolsUsed: ['JavaScript', 'Python', 'Playwright', 'HTML', 'CSS', 'FastAPI']
       },
       {
@@ -36,7 +36,7 @@ function App() {
         title: 'Väderapp', 
         description: 'Väderapp som hämtar riktig data via en API', 
         gitHubLink: 'www.github.com/DavidKarlJohnson/weather-app',
-        projectLink: 'www.davidjohnson.se',
+        projectLink: null,
         toolsUsed: ['JavaScript', 'HTML', 'CSS', 'Webpack']
       },
       {
@@ -54,7 +54,7 @@ function App() {
         title: 'CV mall', 
         description: 'En mall för att skapa ett personligt CV', 
         gitHubLink: 'www.github.com/DavidKarlJohnson/cv-application',
-        projectLink: 'www.davidjohnson.se',
+        projectLink: null,
         toolsUsed: ['JavaScript', 'React', 'HTML', 'CSS']
       },
       {
@@ -72,7 +72,7 @@ function App() {
         title: 'Tre i rad', 
         description: 'Det klassiska spelet Tre i rad i webbläsaren!', 
         gitHubLink: 'www.github.com/DavidKarlJohnson/tic-tac-toe',
-        projectLink: 'www.davidjohnson.se',
+        projectLink: null,
         toolsUsed: ['JavaScript', 'HTML', 'CSS']
       }
     ]);
