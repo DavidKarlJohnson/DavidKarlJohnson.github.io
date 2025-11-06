@@ -5,7 +5,7 @@ import ExternalSiteButton from './ExternalSiteButton';
 
 export default function Contact({emailLink, gitHubLink, linkedInLink}) {
     return (
-        <footer className="contact-group">
+        <footer className="contact-group">  
             <div>
                 <h2>Kontakta mig</h2>
                 {emailLink !== null && 
