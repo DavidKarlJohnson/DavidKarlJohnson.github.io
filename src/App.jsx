@@ -318,7 +318,7 @@ function App() {
         discipline: 'computer science',
         university: 'Uppsala Universitet',
         link: 'https://www.uu.se/utbildning/kurs?query=1DL242',
-        toolsUsed: [] 
+        toolsUsed: ['Figma'] 
       },
       {
         id: '1DT072',
