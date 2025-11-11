@@ -84,7 +84,8 @@
 }
 
 .about-group button {
-    width: 40px;
+    width: 7vw;
+    max-width: 35px;
 }
 
 @media (max-width: 850px) {
