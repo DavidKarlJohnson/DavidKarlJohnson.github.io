@@ -8,13 +8,14 @@
 /* Profile picture group */
 .profile div:first-child {
     display: flex;
+    filter: grayscale();
     justify-content: center;
     transition: filter 2s ease, transform 2s ease;
     will-change: filter, transform;
 }
 
 .profile div:first-child:hover {
-    filter: sepia(100%);
+    filter: none;
     transform: scale(1.1);
     transition: filter 2s ease, transform 2s ease;
 }

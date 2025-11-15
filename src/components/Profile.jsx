@@ -1,15 +1,14 @@
 import '../styles/Profile.css';
-import personLake from '../assets/person-lake.jpg';
 import ExternalSiteButton from './ExternalSiteButton';
 import emailIcon from '../assets/email.svg'
-
 export default function Profile({emailLink=null, gitHubLink, linkedInLink, hidePortrait}) {
     const name = "David Johnson";
+    const profilePicSrc = 'https://live.staticflickr.com/65535/54926208431_a4d2d55e8b_c.jpg';
     const aboutMe = 'Datavetenskapsstudent vid Uppsala universitet med breda kompetenser inom programmering, systemutveckling och matematik. Våren 2026 påbörjar jag min kandidatuppsats och letar nu efter ett spännande datavetenskapligt område att fördjupa mig i. Hör gärna av dig om du vill samarbeta eller har ett projekt som kan passa!'
     return (
         <section className="profile">
             <div>   
-                { hidePortrait === false && <img className="profile-picture" src={personLake} /> }
+                { hidePortrait === false && <img className="profile-picture" src={profilePicSrc} /> }
                 { hidePortrait === false && <span>{name}</span> }
             </div>
             <div className="about-group">
