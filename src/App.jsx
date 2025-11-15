@@ -339,9 +339,37 @@ function App() {
         university: 'Uppsala Universitet',
         link: 'https://www.uu.se/utbildning/kurs?query=1DL610',
         toolsUsed: ['Python'] 
+      },
+      {
+        id: '1TD169',
+        name: 'Data engineering I',
+        desc: 'Den här kursen handlar om hur man angriper analys av datamängder som är så stora så att det inte längre går att hantera dem med traditionella databaser och traditionell programvara. Sådan datamängder kan till exempel genereras från experiment och simuleringar inom många vetenskapsområden. Ett vanligt problem inom storskalig maskininlärning är preprocessing och transformation av massiva datamängder innan modeller tränas.',
+        hp: 5,
+        discipline: 'computer science',
+        university: 'Uppsala Universitet',
+        link: 'https://www.uu.se/utbildning/kurs?query=1TD169',
+        toolsUsed: [] 
+      },
+      {
+        id: '1MD200',
+        name: 'Krav inom agil utveckling',
+        desc: 'Den här kursen handlar om metoder för att ta reda på hur IT-stöd bör utformas, med fokus på att ge professionella yrkesutövare bra stöd i sina arbeten. Begreppen användbarhet och användarcentrerad design sätts i sammanhang med agil mjukvaruutveckling. I kursen genomförs även den första iterationen av ett agilt utvecklingsprojekt för att ge praktisk erfarenhet av att identifiera och förfina krav genom observationsstudier, intervjuer, behovsanalys, kontextuell design och utvärdering.',
+        hp: 5,
+        discipline: 'computer science',
+        university: 'Uppsala Universitet',
+        link: 'https://www.uu.se/utbildning/kurs?query=1MD200',
+        toolsUsed: [] 
+      },
+      {
+        id: '1DL034',
+        name: 'Introduktion till maskininlärning',
+        desc: 'Detta är en praktisk introduktion till maskininlärning: dess terminologi, en översikt av metoder för övervakad och oövervakad inlärning, som exempelvis regression, klassificeringsträd, introduktion till neuronnät och djupinlärning (deep learning), och klustring, användning av etablerade verktyg för maskininlärning, tillämpning av metoderna på verklig data, och praktiska aspekter så som dimensionsreduktion och korsvalidering.',
+        hp: 5,
+        discipline: 'computer science',
+        university: 'Uppsala Universitet',
+        link: 'https://www.uu.se/utbildning/kurs?query=1DL034',
+        toolsUsed: [] 
       }
-
-
     ]
   )
 
