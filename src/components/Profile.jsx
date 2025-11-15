@@ -5,7 +5,7 @@ import emailIcon from '../assets/email.svg'
 
 export default function Profile({emailLink=null, gitHubLink, linkedInLink, hidePortrait}) {
     const name = "David Johnson";
-    const aboutMe = 'Datavetenskapsstudent vid Uppsala universitet med bred teknisk kompetens inom programmering, systemutveckling och matematik'
+    const aboutMe = 'Datavetenskapsstudent vid Uppsala universitet med breda kompetenser inom programmering, systemutveckling och matematik. Våren 2026 påbörjar jag min kandidatuppsats och letar nu efter ett spännande datavetenskapligt område att fördjupa mig i. Hör gärna av dig om du vill samarbeta eller har ett projekt som kan passa!'
     return (
         <section className="profile">
             <div>   

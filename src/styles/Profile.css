@@ -1,5 +1,5 @@
 .profile {
-    --profile-height: 30vh;
+    --profile-height: 35vh;
     display: flex;
     margin-top: var(--nav-btn-height);
     padding: 0vw var(--root-padding);
