@@ -271,13 +271,13 @@ function App() {
         toolsUsed: [] 
       },
       {
-        id: '1DL301',
-        name: 'Databasteknik DV',
+        id: '1DL305',
+        name: 'Databasteknik I DV',
         desc: 'I kursen studeras hur man använder en databashanterare för att designa (modellera och konstruera) en databas, och hur man söker i databasen genom att använda ett frågespråk. Kursen innehåller entitets-relations (ER) modellering, relationsdatamodellen, funktionella beroenden och normalisering, introduktion till frågor, uppdateringar och data definition med hjälp av frågespråket SQL samt detaljer angående den interna representationen av data.',
         hp: 5,
         discipline: 'computer science',
         university: 'Uppsala Universitet',
-        link: 'https://www.uu.se/utbildning/kurs?query=1DL301',
+        link: 'https://www.uu.se/utbildning/kurs?query=1DL305',
         toolsUsed: ['SQL'] 
       },
       {
