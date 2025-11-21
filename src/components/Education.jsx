@@ -36,7 +36,7 @@ export default function Education({ courses }) {
             <h2>Utbildning</h2>
             <div className='education-info'>
                 <div className='education-info-top'>
-                    <h3>Kandidatexamen Datavetenskap</h3>
+                    <h3>Kandidatprogram i datavetenskap</h3>
                     <div>
                         <div className='university-group'>
                             <UniversityImg name={'Uppsala Universitet'}/>
